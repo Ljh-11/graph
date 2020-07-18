@@ -11,7 +11,7 @@
 
 //图的邻接矩阵存储结构
 typedef struct {
-    char Vex[MaxVertexNum];  //一位数组存储char型顶点的数据
+    char Vex[MaxVertexNum]; //一位数组存储char型顶点的数据
     int Edge[MaxVertexNum][MaxVertexNum]; //邻接矩阵，边表
 
     int vexnum, arcnum; //图中顶点数和弧数
