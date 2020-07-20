@@ -4,10 +4,23 @@
 #include <iostream>
 
 /*
- * 邻接表法
+ * 邻接矩阵法（顺序存储）、邻接表法（顺序 + 链式存储）
  */
 
 #define MaxVertexNum 100 //图中顶点数目的最大值
+
+/*
+ * 邻接矩阵存储结构
+ */
+
+//图的邻接矩阵存储结构
+typedef struct {
+    char Vex[MaxVertexNum]; //一维数组存储char型顶点的数据
+    int Edge[MaxVertexNum][MaxVertexNum]; //邻接矩阵，边表
+
+    int vexnum, arcnum; //图中顶点数和弧数
+}MGraph;
+
 
 /*
  * 邻接表存储结构
